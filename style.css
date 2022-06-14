@@ -109,34 +109,10 @@ body {
   min-height: 830px;
   background-image: url(./images/Rectangle\ 388.png);
 }
-.intro-header-title {
-  text-transform: uppercase;
-  display: flex;
-  color: transparent;
-  text-shadow: 1px 1px 0 #034DA2;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6.9rem;
-  margin-bottom: 4rem;
-  font-size: 5.6rem;
-}
 .intro-desc {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.intro-desc-text {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #034DA2;
-  margin: 0 1.5rem;
+  margin-top: 7rem;
 }
 .intro-content {
   color: #034DA2;
@@ -199,35 +175,11 @@ body {
   overflow-x: hidden;
   object-fit: scale-down;
 }
-.newpapers-header-title {
-  text-transform: uppercase;
-  display: flex;
-  color: transparent;
-  text-shadow: 1px 1px 0 #034DA2;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6.9rem;
-  margin-bottom: 4rem;
-  font-size: 5.6rem;
-}
 .newpapers-desc {
-  margin-bottom: 4rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.newpapers-desc-text {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #034DA2;
-  margin: 0 1.5rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 .newpapers-list {
   cursor: pointer;
@@ -339,36 +291,28 @@ body {
 }
 
 .product {
+  position: relative;
+  height: 263px;
+  margin-top: 4.2rem;
   background-image: url(./images/product-background.png);
+  background-color: #034DA2;
+  mix-blend-mode: hard-light;
+  opacity: 1;
 }
-.product-header-title {
-  text-transform: uppercase;
-  display: flex;
-  color: transparent;
-  text-shadow: 1px 1px 0 #034DA2;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6.9rem;
-  margin-bottom: 4rem;
-  font-size: 5.6rem;
+.product::before {
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 263px;
+  position: absolute;
+  background-color: white;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 52%, 0% 100%);
 }
 .product-desc {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.product-desc-text {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #034DA2;
-  margin: 0 1.5rem;
+  padding-top: 4.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
