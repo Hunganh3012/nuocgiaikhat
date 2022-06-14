@@ -1,0 +1,35 @@
+$primary-color: #034DA2;
+$second-color: #111111;
+$third-color: #007F3E;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+ul,
+li,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    max-width: 0 auto;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}
+.wrapper{
+    max-width: 1920px;
+}
+.nav-menu{
+    display: flex;
+    &-icon-home{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &-list{
+        display: flex;
+    }
+}

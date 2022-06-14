@@ -1,0 +1,44 @@
+$primary-color: #034DA2;
+$second-color: #111111;
+$third-color: #007F3E;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+ul,
+li,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}
+.wrapper{
+    max-width: 1920px;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.nav-menu{
+    display: flex;
+    nav img .nav-icon-logo{
+        width: 14rem;
+        height: 75px;
+    }
+    &img .nav-icon-home{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &-list{
+        text-transform: uppercase;;
+        display: flex;
+    }
+}
