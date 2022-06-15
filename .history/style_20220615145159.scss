@@ -1,0 +1,560 @@
+$primary-color: #034DA2;
+$second-color: #111111;
+$third-color: #007F3E;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    z-index: 1;
+}
+ul,
+li,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 20px;
+}
+.wrapper{
+    max-width: 1920px;
+    z-index: 1;
+}
+.container{
+    
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+// -----------------------------TRANG CHỦ----------------------------------
+.header{
+    position: relative;
+    &-highlight{
+        width: 100%;
+        min-height: 1024px;
+        object-fit: cover;
+    }
+    &-social{
+        position: absolute;
+        top: 26.4%;
+        left: 96.2%;
+
+        &-list{
+            display: block;     
+        }
+    }
+}
+//------nav icon
+.nav{
+    
+    &-icon-logo{
+        cursor: pointer;
+        margin: 1.3rem 0;
+        margin-right: 4.4rem;
+    }
+    &-icon-home{
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+    &-icon-search{
+        cursor: pointer;
+        margin-right: 1.5rem;
+        position: relative;
+        margin-left:3.6rem ;
+        &-circle{
+            position: absolute;
+            top: -9px;
+        }
+        &-down{
+            position: absolute;
+            left: 13px;
+            bottom: -9px;
+        }
+    }
+    &-language{
+        font-family: 'Mark Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        margin-left: 16px;
+        margin-right: 6px;
+    }
+    &-icon-star{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: red;
+    }
+    &-icon-dropdown{
+        margin-left: 10px;
+    }
+}
+//--------nav-list
+.nav-menu{
+    position: relative;
+    color: $primary-color;
+    // justify-content: space-between;
+    align-items: center;
+    display: flex;
+    &
+    
+    &-item:not(:last-child){
+        margin-right: 2rem;
+    }
+    &-item{
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &-list{
+    text-transform: uppercase;;
+        display: flex;
+    }
+    
+}
+
+
+// ------------intro------
+.intro{
+    position: relative;
+    width: 100%;
+    min-height: 830px; 
+    background-image: url(./images/Rectangle\ 388.png);
+    // &-header{
+        
+    // }
+    &-desc{
+        display: flex;
+        justify-content: center;
+       padding-top: 7rem;
+    }
+    &-content{
+        color: $primary-color;
+        margin-top: 5.7rem;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+        &-title{
+            margin-top: 8.5rem;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            /* or 167% */
+
+            text-align: center;
+
+        }
+    }
+    &-button{
+        display: flex;
+        justify-content: center;
+        text-decoration-line: underline;
+        margin-top: 4.6rem;
+         &-more{
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 10px 30px;
+            border-radius: 60px;
+        }
+    }
+    
+}
+.newpapers{
+    margin-top: 7.1rem;
+    position: relative;
+    &-blue1{
+        position: absolute;
+        left: 300px;
+        top: 107px;
+        overflow: hidden;
+        opacity: 0.05;
+    }
+    &-blue2{
+        position: absolute;
+        opacity: 0.05;
+        top: 942px;
+        left: 1307px;
+        overflow: hidden;
+    }
+    &-blue3{
+        position: absolute;
+        opacity: 0.05;
+        overflow: hidden;
+    }
+    
+    // &-header{
+        
+    // }
+    &-desc{
+       display: flex;
+       justify-content: center;
+       margin-top: 7rem;
+       margin-bottom: 4rem;
+    }
+    &-list{
+       
+        cursor: pointer;
+        display: grid;
+        // grid-template-columns: repeat(4,1fr);
+        &-box1{ grid-area: box1;}
+        &-box2{ grid-area: box2; height: 285px;}
+        &-box3{ 
+            grid-area: box3;
+            position: relative;
+        }
+        &-box4{ 
+            grid-area: box4;
+            position: relative;
+        }
+        &-box5{ grid-area: box5; height: 285px;}
+        &-box6{ grid-area: box6;}
+        &-box7{ grid-area: box7;}
+        &-box8{ grid-area: box8;}
+        &-box9{
+             grid-area: box9;
+             position: relative;
+        }
+        grid-template-areas:
+            'box1 box1 box2 box3'
+            'box1 box1 box4 box5'
+            'box6 box7 box8 box9'
+        ;
+        &-box3::after , &-box9::after{
+            content: '';
+            position: absolute;
+            // top: ;
+            width: 20px;
+            height: 20px;
+            // background-color: #007F3E;
+            transform: rotate(45deg);
+            left: -3%;
+            background-color: white;
+
+        }
+        &-box4::after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            right: -3%;
+            background-color: white;
+        }
+        // margin-top:4rem ;
+        &-box1{
+            position: relative;
+            width:570px;
+            height: 570px;
+            background-image: url(./images/Rectangle\ 397.png);
+            &-text{
+                padding: 25px;
+                height: 139px;
+                color: white;
+                position: absolute;
+                bottom: 0;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 30px;
+                /* or 136% */
+                background-color: #034da28f;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &-box{
+        z-index: 1;
+        padding: 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        width: 285px;
+        height: 285px;
+        background-color: white;
+    }
+    &-button{
+        display: flex;
+        justify-content: center;
+        text-decoration-line: underline;
+        margin-top: 4.6rem;
+         &-more{
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 10px 30px;
+            border-radius: 60px;
+        }
+    }
+}
+//-----------------Product------------
+.product{
+    position: relative;
+    &-header{
+        // position: relative;
+        height: 273px;
+        margin-top: 4.2rem;
+        background-image:url(./images/product-header.png);
+    display: block;
+    }
+    &-desc{
+       display: flex;
+       justify-content: center;
+       padding-top: 4.1rem;
+    }
+    &-body{
+        // background-image: url(./images/product-footer.png);
+      &-highlight{
+        &-content{
+            margin-right: 8.2rem;
+        }
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        &-title{
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: $primary-color;
+        }
+        &-text{
+            display: flex;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            color: #111111;
+        }
+
+      }
+    }
+    &-button{
+        display: flex;
+        justify-content: center;
+        text-decoration-line: underline;
+        margin-top: 5rem;
+         &-more{
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 10px 30px;
+            border-radius: 60px;
+        }
+    }
+    &-list{
+       
+        z-index: 1;
+        margin-top: 3.2rem;
+        display: flex;
+        position: relative;
+    }
+    &-item{
+        cursor: pointer;
+    }
+    &-item2{
+        margin-right: 23rem;
+    }
+    &-item3{
+        position: absolute;
+        top: -20%;
+        left: 37%;
+    }
+    &-background-footer{
+        // background-image:url(./images/product-header.png);
+        overflow: hidden;
+        width: 100%;
+        // z-index: 0;
+        position: absolute;
+        top: 85%;
+    }
+    &-arrow-right{
+        left: 100%;
+        top: 36%;
+    }
+    &-arrow-left{
+        right: 100%;
+        top: 36%;
+    }
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+}
+// --------------------------PARNER---------------
+.partner{
+    background-image: url(./images/background-doitac.png);
+    width: 100%;
+    margin-top: 12rem;
+    padding-top: 2.8rem;
+    height: auto;
+    &-header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    &-body{
+        // padding-bottom: 6rem;
+        display: flex;
+        padding-bottom: 4rem;
+        justify-content: space-between;
+        &-list{
+            display: block;
+            // display: flex;
+            // width: calc(100%-3rem);
+            padding: 10px;
+            background: #ffff;
+            border-radius: 36px;
+        }
+        &-list:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+}
+
+// ----------------------------CONTACT--------------------
+.contact{
+    background-color: #034da2;
+    background-image:
+    url(./images/bạkground-contact.png);
+    &-item{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+
+            &-copyright{
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            
+            text-transform: uppercase;
+            color: #FFFFFF;
+            }
+
+
+
+
+
+        &-list{
+            display: flex;
+            align-items: center;
+        }
+        &-we{
+                        
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: flex-end;
+            text-align: right;
+
+            color: #FFFFFF;
+        }
+    }
+    &-icon{
+        cursor: pointer;
+        display: block;
+        padding: 8px;
+        border: 2px solid #FFFFFF;
+        border-radius: 8px;
+        margin-left: 2rem;
+    }
+}
+
+//----------------------FOOTER-BOTTOM----------------
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./images/background-doitac.png);
+    &-content{
+        margin: 2.5rem 0;
+        // display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #111111;
+    }
+    &-text{
+        display: block;
+        align-items: center;
+    }
+}
+
+// ---------------RESPONSIVE--------------------
+@media screen and (max-width:1023px) {
+    .header{
+        &-menu-bars{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 30px;
+            transform: translate(-50%, 100%);
+        }
+    }
+    .nav{
+        &-icon-home,
+        &-icon-search,
+        &-language,
+        &-icon-star,
+        &-icon-dropdown{
+            display: none;
+        }
+        &-menu{
+            &-list{
+                display: none;
+            }
+        }
+
+    }
+}

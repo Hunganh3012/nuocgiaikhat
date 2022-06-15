@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -34,10 +35,41 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  position: relative;
+}
 .header-highlight {
   width: 100%;
   min-height: 1024px;
   object-fit: cover;
+}
+.header-social {
+  z-index: 0;
+  position: absolute;
+  top: 26.4%;
+  left: 96.2%;
+}
+.header-social-list {
+  display: block;
+}
+.header-menu-bars {
+  display: none;
+}
+.header-toggle {
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+  position: absolute;
+  right: -1px;
+  top: 12.1%;
+  width: 300px;
+  transform: translateX(100%);
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+.is-toggle {
+  transform: translateX(0);
 }
 
 .nav-icon-logo {
@@ -112,7 +144,7 @@ body {
 .intro-desc {
   display: flex;
   justify-content: center;
-  margin-top: 7rem;
+  padding-top: 7rem;
 }
 .intro-content {
   color: #034DA2;
@@ -153,27 +185,27 @@ body {
 }
 
 .newpapers {
-  position: relative;
   margin-top: 7.1rem;
-}
-.newpapers-blue {
-  position: absolute;
-  opacity: 0.05;
+  position: relative;
 }
 .newpapers-blue1 {
-  left: 0;
-  top: 570px;
+  position: absolute;
+  left: 300px;
+  top: 107px;
+  overflow: hidden;
+  opacity: 0.05;
 }
 .newpapers-blue2 {
-  left: 1318px;
-  top: 85%;
-  z-index: 0;
+  position: absolute;
+  opacity: 0.05;
+  top: 942px;
+  left: 1307px;
+  overflow: hidden;
 }
 .newpapers-blue3 {
-  left: 1668px;
-  top: 78px;
-  overflow-x: hidden;
-  object-fit: scale-down;
+  position: absolute;
+  opacity: 0.05;
+  overflow: hidden;
 }
 .newpapers-desc {
   display: flex;
@@ -292,27 +324,283 @@ body {
 
 .product {
   position: relative;
-  height: 263px;
-  margin-top: 4.2rem;
-  background-image: url(./images/product-background.png);
-  background-color: #034DA2;
-  mix-blend-mode: hard-light;
-  opacity: 1;
 }
-.product::before {
-  content: "";
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 263px;
-  position: absolute;
-  background-color: white;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 52%, 0% 100%);
+.product-header {
+  height: 273px;
+  margin-top: 4.2rem;
+  background-image: url(./images/product-header.png);
+  display: block;
 }
 .product-desc {
   display: flex;
   justify-content: center;
   padding-top: 4.1rem;
+}
+.product-body-highlight {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.product-body-highlight-content {
+  margin-right: 8.2rem;
+}
+.product-body-highlight-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #034DA2;
+}
+.product-body-highlight-text {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #111111;
+}
+.product-button {
+  display: flex;
+  justify-content: center;
+  text-decoration-line: underline;
+  margin-top: 5rem;
+}
+.product-button-more {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #034DA2;
+  border: 1px solid #034DA2;
+  padding: 10px 30px;
+  border-radius: 60px;
+}
+.product-list {
+  z-index: 1;
+  margin-top: 3.2rem;
+  display: flex;
+  position: relative;
+}
+.product-item {
+  cursor: pointer;
+}
+.product-item2 {
+  margin-right: 23rem;
+}
+.product-item3 {
+  position: absolute;
+  top: -20%;
+  left: 37%;
+}
+.product-background-footer {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+}
+.product-arrow-right {
+  left: 100%;
+  top: 36%;
+}
+.product-arrow-left {
+  right: 100%;
+  top: 36%;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+}
+
+.partner {
+  background-image: url(./images/background-doitac.png);
+  width: 100%;
+  margin-top: 12rem;
+  padding-top: 2.8rem;
+  height: auto;
+}
+.partner-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.partner-body {
+  display: flex;
+  padding-bottom: 4rem;
+  justify-content: space-between;
+}
+.partner-body-list {
+  display: block;
+  padding: 10px;
+  background: #ffff;
+  border-radius: 36px;
+}
+.partner-body-list:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.contact {
+  background-color: #034da2;
+  background-image: url(./images/bạkground-contact.png);
+}
+.contact-item {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-item-copyright {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact-item-list {
+  display: flex;
+  align-items: center;
+}
+.contact-item-we {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #FFFFFF;
+}
+.contact-icon {
+  cursor: pointer;
+  display: block;
+  padding: 8px;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  margin-left: 2rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./images/background-doitac.png);
+}
+.footer-bottom-content {
+  margin: 2.5rem 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111111;
+}
+.footer-bottom-text {
+  display: block;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-menu-item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-menu-bars {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 33px;
+    transform: translate(-93%, 100%);
+  }
+  .header-highlight {
+    object-fit: cover;
+    min-height: 731px;
+  }
+  .header-social {
+    position: absolute;
+    top: 59.4%;
+    left: 91.2%;
+  }
+  .header-toggle {
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .menu-toggle-list {
+    color: #034DA2;
+    margin-top: 30px;
+  }
+  .menu-toggle-item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .menu-toggle-search {
+    margin-bottom: 3rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    position: relative;
+  }
+  .menu-toggle-search-circle {
+    position: absolute;
+    top: -9px;
+  }
+  .menu-toggle-search-down {
+    position: absolute;
+    left: 155px;
+    bottom: -9px;
+  }
+  .menu-language {
+    padding-top: 2rem;
+    display: block;
+    font-family: "Mark Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 16px;
+    margin-right: 6px;
+  }
+  .menu-icon-star {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .nav-icon-home, .nav-icon-search, .nav-language, .nav-icon-star, .nav-icon-dropdown {
+    display: none;
+  }
+  .nav-menu {
+    position: inherit;
+  }
+  .nav-menu-list {
+    display: none;
+  }
+
+  .newpapers-list {
+    grid-template-areas: "box1 box1" "box1 box1" " box2 box3" "box4 box5" "box6 box7" "box8 box9";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
