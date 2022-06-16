@@ -768,11 +768,32 @@ body{
         }
     }
 }
-// @media screen and (min-width:1024px){
-//     .product-img-beer{
-//         width: 164px;
-//     }
-// }
+@media screen and (max-width:1279px){
+    .arrow{
+        display: none;
+    }
+    .product-item2 {
+        margin-right: 13rem;
+    }
+    .product-img-beer{
+        width: 150px;
+    }
+    .product-item3 {
+        position: absolute;
+        top: -24%;
+        left: 38%;
+    }
+    .product-img-beer-highlight{
+        width: 200px;
+    }
+    .newpapers-list{
+        grid-template-areas:
+        "box1 box1 box2"
+        "box1 box1 box3"
+        "box4 box5 box6"
+        " box7 box8 box9";
+    }
+}
 @media screen and (min-width:1024px) {
     .header-social {
         z-index: 0;
@@ -783,20 +804,28 @@ body{
     .nav-menu-item {
         font-size: 13px;
     }
-    .newpapers-list {
-        cursor: pointer;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
-    }
-    .newpapers-list {
-        cursor: pointer;
-        display: grid;
-        grid-template-areas:
-            "box1 box1 box2 box3"
-            "box1 box1 box4 box5"
-            "box6 box7 box8 box9";
-    }   
+    // .newpapers-list {
+    //     cursor: pointer;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center; 
+    // }
+    // .newpapers-list {
+    //     cursor: pointer;
+    //     display: grid;
+    //     grid-template-areas:
+    //         "box1 box1 box2 box3"
+    //         "box1 box1 box4 box5"
+    //         "box6 box7 box8 box9";
+    // } 
+    // .newpapers-list {
+    //     display: grid;
+    //     grid-template-areas:
+    //         "box1 box1 box2"
+    //         "box1 box1 box3"
+    //         "box4 box5 box6"
+    //         " box7 box8 box9";
+    // }  
     // .product-arrow-left {
     //     right: 93%;
     //     top: 23%;
@@ -833,10 +862,26 @@ body{
         width: 87px;
     }
 }
+// @media  screen and (max-width:900px) {
+//     .newpapers-list {
+//         display: grid;
+//         grid-template-areas:
+//             "box1 box1 box2"
+//             "box1 box1 box3"
+//             "box4 box5 box6"
+//             " box7 box8 box9";
+//     }   
+// }
 @media screen and (max-width:767px){
+    .nav-icon-logo{
+        width: 100px;
+    }
     .header-menu-bars {
-        font-size: 30px;
+        font-size: 25px;
         transform: translate(-89%, 126%);
+    }
+    .header-toggle{
+        top: 10%;
     }
     .header-social {
         position: absolute;
@@ -884,7 +929,7 @@ body{
     .newpapers-list-box7,
     .newpapers-list-box8,
     .newpapers-list-box9{
-        width: 384px;
+        width: 570px;
     }
     .newpapers-w100{
         width: 100%;
@@ -982,6 +1027,21 @@ body{
         width: calc(50% - 3rem);
     }
 }
+@media  screen and(max-width:750px) {
+    .product-item3 {
+        position: absolute;
+        top: -9%;
+        left: 37.5%;
+    }
+}
+@media screen and (max-width:479px) {
+    .product-item3 {
+        position: absolute;
+        top: -9%;
+        left: 30.5%;
+    }
+}
+
 @media screen and (max-width:319px){
     .title-responsive {
         width: 250px;
