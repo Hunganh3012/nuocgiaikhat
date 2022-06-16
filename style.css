@@ -60,15 +60,16 @@ body {
   transition: all 0.3s ease;
   z-index: 1;
   position: absolute;
-  right: -1px;
+  right: 0px;
   top: 12.1%;
   width: 300px;
   transform: translateX(100%);
   height: auto;
-  background-color: #FFFFFF;
+  background-color: #034DA2;
 }
 
 .is-toggle {
+  display: block;
   transform: translateX(0);
 }
 
@@ -440,6 +441,10 @@ body {
   padding: 10px;
   background: #ffff;
   border-radius: 36px;
+  transition: all 0.3s ease;
+}
+.partner-body-list:hover {
+  box-shadow: 5px 10px 18px gray;
 }
 .partner-body-list:not(:last-child) {
   margin-right: 3rem;
@@ -456,7 +461,6 @@ body {
   justify-content: space-between;
 }
 .contact-item-copyright {
-  font-family: "Mark Pro";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -514,13 +518,13 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .nav-menu-item {
-    font-size: 14px;
-  }
-}
 @media screen and (max-width: 1023px) {
+  .title-responsive {
+    width: 550px;
+  }
+
   .header-menu-bars {
+    color: #034DA2;
     display: block;
     position: absolute;
     right: 0;
@@ -535,17 +539,18 @@ body {
   .header-social {
     position: absolute;
     top: 59.4%;
-    left: 91.2%;
+    left: 89.2%;
   }
   .header-toggle {
-    display: block;
+    transition: all 0.2s linear;
     text-align: center;
     padding-bottom: 3rem;
   }
 
   .menu-toggle-list {
-    color: #034DA2;
+    color: white;
     margin-top: 30px;
+    padding: 0 15px;
   }
   .menu-toggle-item {
     font-family: "Montserrat";
@@ -555,8 +560,12 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 1rem;
   }
   .menu-toggle-search {
+    display: none;
+    color: #FFFFFF;
     margin-bottom: 3rem;
     cursor: pointer;
     margin-right: 1.5rem;
@@ -567,11 +576,13 @@ body {
     top: -9px;
   }
   .menu-toggle-search-down {
+    color: white;
     position: absolute;
     left: 155px;
     bottom: -9px;
   }
   .menu-language {
+    color: white;
     padding-top: 2rem;
     display: block;
     font-family: "Mark Pro";
@@ -598,8 +609,410 @@ body {
     display: none;
   }
 
+  .intro-content {
+    color: #034DA2;
+    margin-top: 5.7rem;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .intro-content-title {
+    margin-top: 6.5rem;
+  }
+
   .newpapers-list {
-    grid-template-areas: "box1 box1" "box1 box1" " box2 box3" "box4 box5" "box6 box7" "box8 box9";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .product-img-bialacviet {
+    width: 300px;
+  }
+  .product-img-beer {
+    width: 150px;
+  }
+  .product-img-beer-highlight {
+    width: 177px;
+  }
+  .product-item2 {
+    margin-right: 12rem;
+  }
+  .product-item3 {
+    position: absolute;
+    top: -12%;
+    left: 38.5%;
+  }
+  .product-list {
+    z-index: 1;
+    margin-top: 7.2rem;
+    position: relative;
+    justify-content: center;
+  }
+  .product-background-footer {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+  }
+  .product-body-highlight-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    color: #034DA2;
+  }
+
+  .partner {
+    margin-top: 8rem;
+    padding-top: 2.8rem;
+  }
+  .partner-body {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+  .partner-body-list {
+    margin-bottom: 3rem;
+    width: calc(25% - 3rem);
+  }
+
+  .contact-item-copyright {
+    font-size: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3rem;
+  }
+  .contact-item-logo {
+    margin-right: 11.5rem;
+  }
+  .contact-item-we {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header-social {
+    z-index: 0;
+    position: absolute;
+    top: 26.4%;
+    left: 93.2%;
+  }
+
+  .nav-menu-item {
+    font-size: 13px;
+  }
+
+  .newpapers-list {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newpapers-list {
+    cursor: pointer;
+    display: grid;
+    grid-template-areas: "box1 box1 box2 box3" "box1 box1 box4 box5" "box6 box7 box8 box9";
+  }
+
+  .product-list {
+    justify-content: center;
+  }
+
+  .partner-body-list {
+    width: 87px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-menu-bars {
+    font-size: 30px;
+    transform: translate(-89%, 126%);
+  }
+
+  .header-social {
+    position: absolute;
+    top: 60.4%;
+    left: 83.2%;
+  }
+
+  .menu-toggle-item {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .title-responsive {
+    width: 350px;
+  }
+
+  .intro-desc {
+    padding-top: 4rem;
+  }
+
+  .intro-content {
+    color: #034DA2;
+    margin-top: 1.7rem;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .intro-content-title {
+    margin-top: 2.5rem;
+    font-size: 16px;
+  }
+
+  .intro-button {
+    margin-top: 2.6rem;
+  }
+
+  .newpapers-list-box1-text {
+    font-size: 19px;
+  }
+
+  .newpapers-blue {
+    display: none;
+  }
+
+  .newpapers-list-box2,
+.newpapers-list-box3,
+.newpapers-list-box4,
+.newpapers-list-box5,
+.newpapers-list-box6,
+.newpapers-list-box7,
+.newpapers-list-box8,
+.newpapers-list-box9 {
+    width: 384px;
+  }
+
+  .newpapers-w100 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .newpapers-h384 {
+    height: 384px;
+  }
+
+  .product-body-highlight-content {
+    margin-right: 1rem;
+  }
+
+  .product-img-bialacviet {
+    width: 221px;
+  }
+
+  .product-body-highlight-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #034DA2;
+  }
+
+  .product-body-highlight-text {
+    display: flex;
+    font-family: "Montserrat";
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 12px;
+    /* line-height: 17px; */
+    text-align: center;
+    color: #111111;
+  }
+
+  .product-body-highlight {
+    display: block;
+  }
+
+  .product-body-highlight-img {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-list {
+    justify-content: center;
+    margin-top: 9.2rem;
+  }
+
+  .product-item1,
+.product-item4 {
+    display: none;
+  }
+
+  .product-item2 {
+    margin-right: 8.7rem;
+  }
+
+  .product-img-beer {
+    width: 130px;
+  }
+
+  .product-item3 {
+    position: absolute;
+    top: -9%;
+    left: 29.5%;
+  }
+
+  .product-img-beer-highlight {
+    width: 150px;
+  }
+
+  .contact-item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-item-copyright {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* margin-right: 3rem; */
+  }
+
+  .contact-item-logo {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .contact-item-list {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .footer-bottom-content {
+    font-size: 9px;
+    line-height: 25px;
+  }
+
+  .partner-body-list {
+    margin-bottom: 3rem;
+    width: calc(50% - 3rem);
+  }
+}
+@media screen and (max-width: 319px) {
+  .title-responsive {
+    width: 250px;
+  }
+
+  .nav-icon-logo {
+    width: 100px;
+  }
+
+  .header-toggle {
+    width: 280px;
+  }
+
+  .header-menu-bars {
+    font-size: 22px;
+  }
+
+  .header-highlight {
+    min-height: 500px;
+  }
+
+  .header-social {
+    position: absolute;
+    top: 46.4%;
+    left: 76.2%;
+  }
+
+  .menu-toggle-item {
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-content {
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+
+  .intro-content-title {
+    margin-top: 2.5rem;
+    font-size: 12px;
+  }
+
+  .intro-button-more {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .newpapers-list-box1 {
+    height: 400px;
+  }
+
+  .newpapers-list-box1-text {
+    font-size: 11px;
+    height: 100px;
+    height: 100px;
+    line-height: 20px;
+  }
+
+  .newpapers-h384 {
+    height: 200px;
+  }
+
+  .newpapers-box {
+    font-size: 16px;
+  }
+
+  .newpapers-list-box5 {
+    height: auto;
+  }
+
+  .product-img-beer {
+    width: 103px;
+  }
+
+  .product-item3 {
+    position: absolute;
+    top: -10%;
+    left: 26.5%;
+  }
+
+  .product-img-beer-highlight {
+    width: 120px;
+  }
+
+  .product-item2 {
+    margin-right: 4.7rem;
+  }
+
+  .partner-body-list {
+    margin-bottom: 2rem;
+    width: calc(50% - 3rem);
+  }
+
+  .product-background-footer {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 82%;
   }
 }
 

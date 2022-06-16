@@ -5,8 +5,8 @@ toggle.addEventListener("click",function(e){
     headerMenu.classList.toggle("is-toggle");
     // headerMenu.classList.toggle("is-toggle");
 })
-document.addEventListener("click",function(event){
-    if(!headerMenu.contains(event.target) && !event.target.matches(".header-toogle")){
-        headerMenu.classList.remove(isToggle);
-    }
-})
+// document.addEventListener("click",function(event){
+//     if(!headerMenu.contains(event.target) && !event.target.matches(".header-toogle")){
+//         headerMenu.classList.remove(isToggle);
+//     }
+// })
