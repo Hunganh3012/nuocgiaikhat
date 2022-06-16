@@ -932,7 +932,7 @@ body {
 
   .partner-body-list {
     margin-bottom: 3rem;
-    width: calc(50% - 3rem);
+    width: calc(25% - 3rem);
   }
 }
 @media screen and (max-width: 750px) {
