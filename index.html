@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+
+    <link href="//db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro" rel="stylesheet" type="text/css"/>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet"><link href="//db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet"><link href="//db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 <title>Nước giải khát</title>
 </head>
 <body>
-    <div class="wrapper ">
-        <div class="header">
+    <div class="wrapper">
+        <div class="header container">
             <div class="header-menu-bars">
                 <i class="fa-solid fa-bars-staggered"></i>
                 <!-- <i class="fa-solid fa-bars"></i> -->
@@ -66,62 +73,112 @@
                     <img src="./images/drop-down.png" alt="" class="nav-icon-dropdown">
                 </nav>
             </div>
-            <img src="./images/Rectangle 385.png" alt="" class="header-highlight">
+            <!-- <img src="./images/Rectangle 385.png" alt="" class="header-highlight"> -->
             <div class="header-social">
                <div class="header-social-list">
                 <a href="">
-                    <img src="./images/list-face.png" alt=""  class="">
+                    <i class="fa-brands fa-facebook-f   header-social-item-facebook"></i>
+                    <!-- <img src="./images/list-face.png" alt=""  class=""> -->
                 </a>
                </div>
                <div  class="header-social-list">
                 <a href="">
-                    <img src="./images/list-youtube.png" alt="">
+                    <i class="fa-brands fa-youtube header-social-item  header-social-item-youtube"></i>
+                    <!-- <img src="./images/list-youtube.png" alt="" class="header-social-item"> -->
                 </a>
                </div>
                <div  class="header-social-list">
                 <a href="">
-                    <img src="./images/list-ig.png" alt="" class="header-social-list">
+                    <i class="fa-brands fa-instagram  header-social-item  header-social-item-ig"></i>
+                    <!-- <img src="./images/list-ig.png" alt="" class="header-social-item"> -->
                 </a>
                </div>
                <div  class="header-social-list">  
                 <a href="">
-                    <img src="./images/list-in.png" alt="" class="header-social-list">
+                    <i class="fa-brands fa-linkedin-in  header-social-item  header-social-item-in"></i>
+                    <!-- <img src="./images/list-in.png" alt="" class="header-social-item"> -->
                 </a>               
                </div>
                <div  class="header-social-list">
                 <a href="">
-                    <img src="./images/list-mess.png" alt="" class="header-social-list">
+                    <i class="fa-brands fa-facebook-messenger  header-social-item  header-social-item-mess"></i>
+                    <!-- <img src="./images/list-mess.png" alt="" class="header-social-item"> -->
                 </a>
                </div>
             </div>
         </div>
-        <div class="intro">
+    
+        <div id="demo" class="carousel slide" data-ride="carousel">
+    
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="./images/background-pepsi.png" alt="Chicago"class="header-background" >
+            </div>
+            <div class="carousel-item active">
+                <img src="./images/Rectangle 385.png"alt="Los Angeles" class="header-background">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/background-pepsi.png" alt="Chicago"class="header-background" >
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Rectangle 385.png" alt="New York" class="header-background">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/background-pepsi.png" alt="Chicago"class="header-background" >
+            </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>
+        <div class="intro ">
             <!-- <img src="./images/Rectangle 388.png" alt="" class="intro-background"> -->
-            <div class="intro-header container">
+            <div class="intro-header container  ">
                     <div class="intro-desc ">
-                        <img src="./images/title1.png" alt="" class="title-responsive">
+                        <h1 class="intro-desc-title title-h1">
+                            Nước giải khát
+                        </h1>
+                        <div class=" intro-desc-detal detal">
+                            Giới Thiệu
+                        </div>
+                        <!-- <img src="./images/title1.png" alt="" class="title-responsive"> -->
                     </div>
 
-                    <div class="intro-content">
+                    <div class="intro-content reveal">
                         Chúng tôi tự hào về lịch sử và truyền thống lâu dài của thương hiệu doanh nghiệp,
                          tự hào mang đến thị trường 
                         Việt Nam những sản phẩm giải khát có chất lượng tuyệt đối và tốt nhất cho người Việt.
                     </div>
-                    <div class="intro-content-title">
+                    <div class="intro-content-title reveal">
                         Trong xu thế hội nhập sâu rộng vào nền kinh tế thế giới hiện nay, chiến lược đúng đắn có vai trò quyết định
                          trong sự phát triển và lớn mạnh của doanh nghiệp. Với những nỗ lực phát triển bền bỉ và ổn định, không ngừng
                           nâng cao chất lượng, đa dạng hóa sản phẩm thỏa mãn sự mong đợi của người tiêu dùng, hiện tại – CÔNG TY NGK đang chiếm giữ
                          vị trí dẫn đầu trong ngành giải khát và 5 lần liên tục vinh dự được công nhận là Thương hiệu Quốc Gia.
                     </div>
 
-                    <div class="intro-button">
+                    <div class="intro-button reveal">
                         <a href="#" class="intro-button-more">Xem thêm</a>
                     </div> 
             </div>
         </div>
 
 
-        <div class="newpapers  ">
+        <div class="newpapers reveal ">
             <div class="newpapers-blue newpapers-blue1 ">
                     <img src="./images/blue-item.png" alt="">
             </div>
@@ -133,10 +190,15 @@
                 </div> -->
             <div class="container">
                 <div class="newpapers-desc">
-                    <img src="./images/title2.png" alt="" class="title-responsive">
+                        <h1 class="newpapers-desc-title title-h1">
+                            Tiêu điểm
+                        </h1>
+                        <div class=" newpapers-desc-detal  detal">
+                            Mới nhất
+                        </div>
                 </div>
                 
-            <div class="newpapers-list">
+            <div class="newpapers-list reveal">
                 <div class="newpapers-list-box1 ">
                         <div class="newpapers-list-box1-text">Tiger Remix 2022 - Đại nhạc hội thực tế ảo hứa hẹn công phá mọi kỷ lục để chào đón năm mãnh hổ bùng nổ</div>
                 </div>
@@ -170,13 +232,18 @@
             </div> 
             </div>
         </div>
-        <div class="product">
+        <div class="product reveal">
             <div class="product-header ">
                 <div class="product-desc container">
-                    <img src="./images/title3.png" alt="" class="title-responsive">
+                        <h1 class="product-desc-title">
+                            Khám phá
+                        </h1>
+                        <div class="product-desc-detal  detal">
+                            Các Sản phẩm
+                        </div>
                 </div>
             </div>
-            <div class="product-body ">
+            <div class="product-body reveal">
                 <div class="product-body-highlight container">
                     <div class="product-body-highlight-content">
                         <h3 class="product-body-highlight-title">“Bia Lạc Việt – Công thức Lạc Việt”</h3>
@@ -222,10 +289,15 @@
             </div>
         </div>
         
-        <div class="partner">
+        <div class="partner  reveal">
             <div class="container">
-                <div class="partner-header ">
-                    <img src="./images/title4.png" alt="" class="title-responsive">
+                <div class="partner-desc ">
+                    <h1 class="partner-desc-title title-h1">
+                        Hệ thống
+                    </h1>
+                    <div class=" parner-desc-detal  detal">
+                        Đối tác
+                    </div>
                 </div>
                 <div class="partner-body ">
                     <img src="./images/kmart.png" alt="" class="partner-body-list">
@@ -238,7 +310,7 @@
                     <img src="./images/citimart.png" alt="" class="partner-body-list">                </div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact reveal">
             <!-- <img src="./images/bạkground-contact.png" alt=""> -->
             <div class=" contact-item container">
                 <div class="contact-item-copyright">Copyright 2022 © NƯỚC GIẢI KHÁT</div>
@@ -261,7 +333,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom ">
+        <div class="footer-bottom">
             <div class="footer-bottom-content container">
                 <span class="footer-bottom-text">Cơ quan chủ quản: Công ty Cổ phần Phân Phối Nước Giải Khát</span>
                 <span  class="footer-bottom-text">Trụ sở: 77 Lê Trung Nghĩa, P.12, TP. Hồ Chí Minh – Điện thoại: 1800 1234567</span>
