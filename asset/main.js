@@ -1,3 +1,4 @@
+// -------------------------HEADER MENU BARS------------------------
 const toggle= document.querySelector(".header-menu-bars");
 const headerMenu=document.querySelector(".header-toggle");
 const isToggle=document.querySelector(".is-toggle")
@@ -29,4 +30,4 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
-//   ---------------------------LIST SLIDER-----------
+//   ---------------------------SLIDER BEER-----------

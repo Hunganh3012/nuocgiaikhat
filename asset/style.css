@@ -176,8 +176,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: #034DA2;
+}
+.nav-menu-item a {
+  text-decoration: none;
+  color: #034DA2;
 }
 .nav-menu-list {
+  margin-bottom: 0;
   font-size: 16px;
   text-transform: uppercase;
   display: flex;
@@ -187,7 +193,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 830px;
-  background-image: url(./images/Rectangle\ 388.png);
+  background-image: url(../images/Rectangle\ 388.png);
 }
 .intro-desc {
   display: block;
@@ -404,7 +410,7 @@ body {
   position: relative;
   width: 570px;
   height: 570px;
-  background-image: url(./images/Rectangle\ 397.png);
+  background-image: url(../images/Rectangle\ 397.png);
 }
 .newpapers-list-box1-text {
   padding: 25px;
@@ -460,7 +466,7 @@ body {
 .product-header {
   height: 273px;
   margin-top: 4.2rem;
-  background-image: url(./images/product-header.png);
+  background-image: url(../images/product-header.png);
   display: block;
 }
 .product-desc {
@@ -553,15 +559,36 @@ body {
   position: relative;
 }
 .product-item {
+  position: relative;
   cursor: pointer;
+  width: 213px;
+  height: 278px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
-.product-item2 {
-  margin-right: 23rem;
+.product-item:not(:last-child) {
+  margin-right: 2rem;
 }
-.product-item3 {
+.product-item-beer {
   position: absolute;
-  top: -20%;
-  left: 37%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 13%);
+}
+.product-beer-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  top: 100%;
+  left: 50%;
+  transform: translate(-30%, -150%);
 }
 .product-footer {
   position: relative;
@@ -587,7 +614,7 @@ body {
 }
 
 .partner {
-  background-image: url(./images/background-doitac.png);
+  background-image: url(../images/background-doitac.png);
   width: 100%;
   margin-top: 12rem;
   padding-top: 2.8rem;
@@ -643,7 +670,7 @@ body {
 
 .contact {
   background-color: #034da2;
-  background-image: url(./images/bạkground-contact.png);
+  background-image: url(../images/bạkground-contact.png);
 }
 .contact-item {
   padding-top: 3rem;
@@ -690,7 +717,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(./images/background-doitac.png);
+  background-image: url(../images/background-doitac.png);
 }
 .footer-bottom-content {
   margin: 2.5rem 0;
@@ -828,20 +855,6 @@ body {
   .product-img-bialacviet {
     width: 300px;
   }
-  .product-img-beer {
-    width: 150px;
-  }
-  .product-img-beer-highlight {
-    width: 177px;
-  }
-  .product-item2 {
-    margin-right: 12rem;
-  }
-  .product-item3 {
-    position: absolute;
-    top: -12%;
-    left: 38.5%;
-  }
   .product-list {
     z-index: 1;
     margin-top: 7.2rem;
@@ -892,18 +905,6 @@ body {
     display: none;
   }
 }
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 @media screen and (max-width: 1279px) {
   .arrow {
     display: none;
@@ -916,6 +917,18 @@ body {
     left: 90.2%;
   }
 
+  .detal::before {
+    left: 25%;
+  }
+
+  .detal::after {
+    right: 25%;
+  }
+
+  .product-desc-detal {
+    font-size: 26px;
+  }
+
   .carousel-control-prev {
     height: 30px;
     left: 0;
@@ -924,24 +937,6 @@ body {
 
   .carousel-control-next {
     margin-top: 70%;
-  }
-
-  .product-item2 {
-    margin-right: 13rem;
-  }
-
-  .product-img-beer {
-    width: 150px;
-  }
-
-  .product-item3 {
-    position: absolute;
-    top: -24%;
-    left: 38%;
-  }
-
-  .product-img-beer-highlight {
-    width: 200px;
   }
 
   .newpapers-list {
@@ -992,14 +987,14 @@ body {
   }
 
   .detal::before {
-    left: 9%;
+    left: 11%;
   }
 
   .detal::after {
     content: "";
     position: absolute;
     top: 40%;
-    right: 7%;
+    right: 11%;
   }
 
   .product-desc-title {
@@ -1007,11 +1002,11 @@ body {
   }
 
   .product-desc-detal::before {
-    left: 0%;
+    left: 4%;
   }
 
   .product-desc-detal::after {
-    right: 0%;
+    right: 4%;
   }
 
   .nav-icon-logo {
@@ -1159,29 +1154,6 @@ body {
   .product-list {
     justify-content: center;
     margin-top: 9.2rem;
-  }
-
-  .product-item1,
-.product-item4 {
-    display: none;
-  }
-
-  .product-item2 {
-    margin-right: 8.7rem;
-  }
-
-  .product-img-beer {
-    width: 130px;
-  }
-
-  .product-item3 {
-    position: absolute;
-    top: -9%;
-    left: 29.5%;
-  }
-
-  .product-img-beer-highlight {
-    width: 150px;
   }
 
   .contact-item {
