@@ -231,7 +231,10 @@ body{
     }
     
 }
-
+.menu-toggle-item a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 // ------------intro------
 .intro{
@@ -473,7 +476,22 @@ body{
     }
 }
 //-----------------Product------------
+.swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    // width: 300px;
+    // height: ;
+}
+.swiper-slide-active{
+    filter: blur(0);
+}
 .product{
+
     position: relative;
     &-header{
         // position: relative;

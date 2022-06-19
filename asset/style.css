@@ -189,6 +189,11 @@ body {
   display: flex;
 }
 
+.menu-toggle-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .intro {
   position: relative;
   width: 100%;
@@ -458,6 +463,19 @@ body {
   border: 1px solid #034DA2;
   padding: 10px 30px;
   border-radius: 60px;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .product {

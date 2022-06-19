@@ -230,6 +230,14 @@ body{
     }
     
 }
+.menu-toggle-item a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-menu-item a {
+    text-decoration: none;
+    color: #034DA2;
+}
 .title-h1{
 
     // font-family: 'Mark Pro';
@@ -625,8 +633,14 @@ body{
 
 // -------------------------------------------767px----------------------------------
 @media screen and (max-width:767px) {
-    .title-h1 {
-        font-size: 45px;
+    .nav-icon-logo{
+        width: 95px;
+    }
+    .header-menu-bars{
+        font-size: 26px;
+    }
+    .title-h1{
+        font-size: 30px;
     }
     .desc-text {
         font-size: 16px;
@@ -657,6 +671,9 @@ body{
     }
     .newpapers-list-box {
         width: 570px;
+    }
+    .newpapers-list-box1-text {
+        font-size: 17px;
     }
     .newpapers-w100 {
         width: 100%;
@@ -691,4 +708,37 @@ body{
         line-height: 25px;
     }
 
+}
+@media screen and (max-width:369px) {
+    .menu-toggle-item {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+    .desc-text {
+        padding-top: 3.5rem;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .title-h1 {
+        font-size: 25px;
+    }
+    .detal {
+        font-size: 16px;
+    }
+    .newpapers-angles {
+        margin-right: 2rem;
+    }
+    .newpapers-list-box1-text {
+        padding: 25px;
+        height: 139px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+    }
 }
