@@ -30,7 +30,13 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+
 //   ---------------------------SLIDER BEER-----------
+
+
+
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
