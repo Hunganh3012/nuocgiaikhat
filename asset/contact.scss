@@ -77,20 +77,28 @@ body{
         top: 312.4%;
         left: 122.2%;
         &-item{
+            transition: all 0.3s linear;
+            box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03),
+             0px 1.6711px 2.92443px rgba(0, 0, 0, 0.0215656),
+              0px 0.893452px 1.56354px rgba(0, 0, 0, 0.0178832),
+               0px 0.500862px 0.876509px rgba(0, 0, 0, 0.015),
+                0px 0.266004px 0.465507px rgba(0, 0, 0, 0.0121168),
+                 0px 0.11069px 0.193708px rgba(0, 0, 0, 0.00843437);
             font-size: 25px;
-            padding: 1.8rem 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
             background-color: white;
             border-radius: 50%;
             &-facebook{
                 color: #3550AD;
                 background-color: white;
-                border-radius: 50%;
-                font-size: 25px;
-                padding: 1.8rem 2.7rem;
             }
             &-youtube{
                 color: #FF0000;
-                padding: 2rem;
+
             }
             &-ig{
                 color: #C92F7F;
@@ -104,16 +112,22 @@ body{
             &-mess{
                 color: #C92F7F;
             }
+            &:hover{
+                box-shadow: 0 5px 5px #b5b7b6;
+            }
         }
 
         &-list{
-            display: block;    
+   
             &:not(:last-child){
                     margin-bottom: 1rem;
             } 
             // &:hover{
             //     box-shadow: 5px 0 18px gray;
             // }
+        }
+        &-list a{
+            text-decoration: none;
         }
     }
     &-menu-bars{
@@ -337,10 +351,11 @@ body{
         }
     }
     &-form{
+       
         color: $primary-color;
         width: 568px;
         border: 1px solid $primary-color;
-
+        border-left: none;
         &-h1{
             margin-top: 3rem;
             margin-bottom: 2rem;
