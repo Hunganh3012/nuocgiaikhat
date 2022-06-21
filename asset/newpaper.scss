@@ -695,7 +695,7 @@ body{
         font-size: 26px;
     }
     .title-h1{
-        font-size: 30px;
+        font-size: 40px;
     }
     .desc-text {
         font-size: 16px;
@@ -710,6 +710,9 @@ body{
     .newpapers-footer li:nth-child(6){
           display: none;
         }
+    .detal{
+        font-size: 20px;
+    }
     .detal::before {
         left: 8%;
     }

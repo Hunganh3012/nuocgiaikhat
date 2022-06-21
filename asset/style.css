@@ -63,8 +63,8 @@ body {
 .header-social {
   z-index: 1;
   position: absolute;
-  top: 211.4%;
-  left: 122.2%;
+  top: 19.4%;
+  left: 94.2%;
 }
 .header-social-item {
   transition: all 0.3s linear;
@@ -722,7 +722,7 @@ body {
   content: "";
   display: inline-block;
   height: 17px;
-  left: 313.5px;
+  left: 302.5px;
   padding: 2px;
   position: absolute;
   top: -216px;
@@ -742,7 +742,7 @@ body {
   display: inline-block;
   height: 17px;
   position: absolute;
-  right: 318px;
+  right: 311px;
   padding: 2px;
   top: -220px;
   transform: rotate(-45deg) translateY(-50%);
@@ -1042,6 +1042,9 @@ body {
     margin-top: 2rem;
     color: #034DA2;
   }
+  .product-item5, .product-item1 {
+    display: none;
+  }
 
   .partner {
     margin-top: 2rem;
@@ -1089,7 +1092,7 @@ body {
   .header-social {
     z-index: 1;
     position: absolute;
-    top: 211.4%;
+    top: 24.4%;
     left: 90.2%;
   }
 
@@ -1124,7 +1127,11 @@ body {
     overflow: hidden;
     width: 100%;
     position: absolute;
-    top: 19%;
+    top: 33%;
+  }
+
+  .product-item1, .product-item5 {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1215,15 +1222,15 @@ body {
   }
 
   .header-toggle {
-    top: 99.7%;
+    top: 100%;
     z-index: 2;
   }
 
   .header-social {
     text-align: right;
     position: absolute;
-    top: 249.4%;
-    left: 84.2%;
+    top: 15.4%;
+    left: 81.2%;
     z-index: 1;
   }
 
@@ -1427,11 +1434,11 @@ body {
   }
 
   .header-toggle {
-    width: 280px;
+    width: 100%;
   }
 
   .header-toggle {
-    top: 101%;
+    top: 100%;
   }
 
   .header-menu-bars {
@@ -1444,7 +1451,7 @@ body {
 
   .header-social {
     position: absolute;
-    top: 348.4%;
+    top: 14.4%;
     left: 76.2%;
   }
 
