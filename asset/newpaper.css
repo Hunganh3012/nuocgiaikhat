@@ -52,8 +52,8 @@ body {
 .header-social {
   z-index: 1;
   position: absolute;
-  top: 312.4%;
-  left: 122.2%;
+  top: 52%;
+  left: 95.2%;
 }
 .header-social-item {
   transition: all 0.3s linear;
@@ -516,6 +516,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1279px) {
+  .newpaper-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1023px) {
   .carousel-control-prev, .carousel-control-next {
     margin-top: 100%;

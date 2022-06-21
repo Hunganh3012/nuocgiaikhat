@@ -51,8 +51,8 @@ body {
 .header-social {
   z-index: 1;
   position: absolute;
-  top: 312.4%;
-  left: 122.2%;
+  top: 36.4%;
+  left: 95.2%;
 }
 .header-social-item {
   transition: all 0.3s linear;
