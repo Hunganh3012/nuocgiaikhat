@@ -153,7 +153,7 @@ body{
         position: absolute;
         right: 0px;
         top: 12.1%;
-        width: 300px;
+        width: 100%;
         transform: translateX(100%);
         height:auto;
         background-color: $primary-color;
@@ -1231,6 +1231,9 @@ body{
     //     top: 211.4%;
     //     left: 96.2%;
     // }
+    .is-toggle{
+        display: none;
+    }
     .nav-menu-item {
         font-size: 16px;
     }
